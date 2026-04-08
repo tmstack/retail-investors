@@ -53,13 +53,12 @@
 > **重要**：Claude Code 从 git 仓库根目录的 `.claude/skills/` 查找 skill。
 
 ```bash
-# 安装到当前项目（推荐）
-cd /path/to/your/project
+# 安装到当前项目（在 git 仓库根目录执行）
 mkdir -p .claude/skills
-ln -s /path/to/jiucai-thinking-framework .claude/skills/jiucai-thinking-framework
+git clone https://github.com/tmstack/retail-investors .claude/skills/retail-investors
 
-# 或复制到全局（所有项目可用）
-cp -r /path/to/jiucai-thinking-framework ~/.claude/skills/
+# 或安装到全局（所有项目都能用）
+git clone https://github.com/tmstack/retail-investors ~/.claude/skills/retail-investors
 ```
 
 ### 验证安装
